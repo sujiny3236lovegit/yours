@@ -26,6 +26,15 @@ header .lnb li{
 }
 header .lnb li a{
     text-decoration: none;
+    display: block;
+    height: 81px;
+    padding: 0 35px;
+    font-size: 17px;
+    color: #333;
+    line-height: 81px;
+}
+header .lnb li a:hover{
+    color: rgb(255, 174, 0);
 }
 header .spot{
     position: absolute;
@@ -33,8 +42,29 @@ header .spot{
     top: 0;
 }
 header .spot li{
-    display: inline-block;
+    /* display: inline-block; */
+    float: left;
+    position: relative;
+}
+header .spot li:first-child:after{
+    display: none;
 }
 header .spot li a{
     text-decoration: none;
+    display: block;
+    height: 81px;
+    padding: 0 10px;
+    line-height: 81px;
+}
+header .spot li a{
+    display: block;
+    height: 81px;
+    padding: 0 10px;
+    line-height: 81px;
+}
+header .spot li a:hover{
+    color:rgb(255, 174, 0);
+}
+header .spot li:last-child a{
+    padding-right: 0;
 }
